@@ -14,6 +14,7 @@
 		A0EF97A42694C6EE000C2F23 /* CombineAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EF97A32694C6EE000C2F23 /* CombineAppUITests.swift */; };
 		A0EF97B42694E767000C2F23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0EF97B32694E767000C2F23 /* LaunchScreen.storyboard */; };
 		A0EF97B62694EB3F000C2F23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0EF97B52694EB3F000C2F23 /* Main.storyboard */; };
+		A0EF97BC2694F11A000C2F23 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EF97BB2694F11A000C2F23 /* HomeTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		A0EF97A52694C6EE000C2F23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0EF97B32694E767000C2F23 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A0EF97B52694EB3F000C2F23 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		A0EF97BB2694F11A000C2F23 /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 		A0EF97852694C6EB000C2F23 /* CombineApp */ = {
 			isa = PBXGroup;
 			children = (
+				A0EF97B72694EE1A000C2F23 /* HomeScreen */,
 				A0EF97862694C6EB000C2F23 /* AppDelegate.swift */,
 				A0EF97B22694C77A000C2F23 /* Resources */,
 				A0EF97B12694C765000C2F23 /* Supporting Files */,
@@ -147,6 +150,14 @@
 				A0EF97B52694EB3F000C2F23 /* Main.storyboard */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		A0EF97B72694EE1A000C2F23 /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				A0EF97BB2694F11A000C2F23 /* HomeTableViewController.swift */,
+			);
+			path = HomeScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,6 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0EF97BC2694F11A000C2F23 /* HomeTableViewController.swift in Sources */,
 				A0EF97872694C6EB000C2F23 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -449,7 +461,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.CombineApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -470,7 +482,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.CombineApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
