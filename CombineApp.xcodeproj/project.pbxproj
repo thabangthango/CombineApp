@@ -21,6 +21,7 @@
 		A0EF999F26959BA0000C2F23 /* ImageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EF999E26959BA0000C2F23 /* ImageDetailViewController.swift */; };
 		A0EF99A22695A534000C2F23 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EF99A12695A534000C2F23 /* UIImageView+Extensions.swift */; };
 		A0EF99A42695B92E000C2F23 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EF99A32695B92E000C2F23 /* UIView+Extensions.swift */; };
+		A0EF99A72695BBBE000C2F23 /* StateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EF99A62695BBBE000C2F23 /* StateViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		A0EF999E26959BA0000C2F23 /* ImageDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailViewController.swift; sourceTree = "<group>"; };
 		A0EF99A12695A534000C2F23 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
 		A0EF99A32695B92E000C2F23 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		A0EF99A62695BBBE000C2F23 /* StateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,7 +162,8 @@
 		A0EF97B72694EE1A000C2F23 /* HomeScreen */ = {
 			isa = PBXGroup;
 			children = (
-				A0EF999D26959B6D000C2F23 /* DetailView */,
+				A0EF99A52695BB93000C2F23 /* StateViewController */,
+				A0EF999D26959B6D000C2F23 /* DetailViewController */,
 				A0EF98E726953646000C2F23 /* ViewModel */,
 				A0EF981D2694FA45000C2F23 /* Model */,
 				A0EF97BB2694F11A000C2F23 /* HomeTableViewController.swift */,
@@ -193,12 +196,12 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		A0EF999D26959B6D000C2F23 /* DetailView */ = {
+		A0EF999D26959B6D000C2F23 /* DetailViewController */ = {
 			isa = PBXGroup;
 			children = (
 				A0EF999E26959BA0000C2F23 /* ImageDetailViewController.swift */,
 			);
-			path = DetailView;
+			path = DetailViewController;
 			sourceTree = "<group>";
 		};
 		A0EF99A02695A51E000C2F23 /* Common */ = {
@@ -208,6 +211,14 @@
 				A0EF99A32695B92E000C2F23 /* UIView+Extensions.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		A0EF99A52695BB93000C2F23 /* StateViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A0EF99A62695BBBE000C2F23 /* StateViewController.swift */,
+			);
+			path = StateViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -344,6 +355,7 @@
 				A0EF981F2694FAC2000C2F23 /* Image.swift in Sources */,
 				A0EF999F26959BA0000C2F23 /* ImageDetailViewController.swift in Sources */,
 				A0EF99A42695B92E000C2F23 /* UIView+Extensions.swift in Sources */,
+				A0EF99A72695BBBE000C2F23 /* StateViewController.swift in Sources */,
 				A0EF97872694C6EB000C2F23 /* AppDelegate.swift in Sources */,
 				A0EF98E926953655000C2F23 /* ImagesViewModel.swift in Sources */,
 				A0EF999C26959106000C2F23 /* PicSumImagesService.swift in Sources */,

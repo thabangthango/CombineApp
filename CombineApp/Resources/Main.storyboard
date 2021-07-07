@@ -8,6 +8,50 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--State View Controller-->
+        <scene sceneID="9OV-zY-zvt">
+            <objects>
+                <viewController id="672-TQ-shY" customClass="StateViewController" customModule="CombineApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vo7-Zq-XSW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Kym-D4-StQ">
+                                <rect key="frame" x="15" y="369" width="384" height="70.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type a message to save for later" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9LY-ZN-sBM">
+                                        <rect key="frame" x="0.0" y="0.0" width="384" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F8W-NL-Z3X">
+                                        <rect key="frame" x="0.0" y="36.5" width="384" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <action selector="textFieldDidEndEditing:" destination="672-TQ-shY" eventType="editingDidEnd" id="waY-D9-yXr"/>
+                                        </connections>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Nyy-OQ-Yrm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Kym-D4-StQ" firstAttribute="leading" secondItem="Nyy-OQ-Yrm" secondAttribute="leading" constant="15" id="Cdr-6n-ecG"/>
+                            <constraint firstItem="Kym-D4-StQ" firstAttribute="centerY" secondItem="Nyy-OQ-Yrm" secondAttribute="centerY" id="f3e-Bb-igt"/>
+                            <constraint firstItem="Nyy-OQ-Yrm" firstAttribute="trailing" secondItem="Kym-D4-StQ" secondAttribute="trailing" constant="15" id="wQl-vA-RCh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textField" destination="F8W-NL-Z3X" id="oca-th-cA6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ec0-41-Zd3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="659" y="-1446"/>
+        </scene>
         <!--Root View Controller-->
         <scene sceneID="zWu-0L-aCm">
             <objects>
@@ -22,7 +66,13 @@
                             <outlet property="delegate" destination="0HI-eg-xny" id="xmY-8E-tGl"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="DLA-CD-EI0"/>
+                    <navigationItem key="navigationItem" title="Root View Controller" largeTitleDisplayMode="never" id="DLA-CD-EI0">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="pgS-Z9-45O">
+                            <connections>
+                                <segue destination="672-TQ-shY" kind="presentation" id="YD6-dW-oru"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JuO-r2-jRz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
