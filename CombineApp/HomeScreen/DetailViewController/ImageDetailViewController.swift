@@ -6,12 +6,8 @@ class ImageDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        configureNavbar()
-        loadImage()
-    }
-
-    private func configureNavbar() {
         self.title = selectedImage?.author
+        loadImage()
     }
     
     private func loadImage() {

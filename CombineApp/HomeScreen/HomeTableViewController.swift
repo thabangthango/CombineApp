@@ -2,6 +2,7 @@ import UIKit
 import Combine
 
 fileprivate let defaultCellIdentifier = "cell"
+fileprivate let detailViewIdentifier = "imageDetail"
 
 class HomeTableViewController: UITableViewController {
     private let viewModel = ImagesViewModel(service: PicSumImagesService())
@@ -9,14 +10,10 @@ class HomeTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = .title
         configureTableView()
-        configureNavbar()
         bindViewModel()
         loadImages()
-    }
-    
-    private func configureNavbar() {
-        self.title = .title
     }
     
     private func configureTableView() {
@@ -64,7 +61,7 @@ extension HomeTableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let viewController = storyboard?.instantiateViewController(identifier: "imageDetail") as? ImageDetailViewController else {
+        guard let viewController = storyboard?.instantiateViewController(identifier: detailViewIdentifier) as? ImageDetailViewController else {
             return
         }
         
