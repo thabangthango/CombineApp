@@ -18,6 +18,8 @@
 		A0EF98222694FD37000C2F23 /* WebClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EF98212694FD37000C2F23 /* WebClient.swift */; };
 		A0EF98E926953655000C2F23 /* ImagesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EF98E826953655000C2F23 /* ImagesViewModel.swift */; };
 		A0EF999C26959106000C2F23 /* PicSumImagesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EF999B26959106000C2F23 /* PicSumImagesService.swift */; };
+		A0EF999F26959BA0000C2F23 /* ImageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EF999E26959BA0000C2F23 /* ImageDetailViewController.swift */; };
+		A0EF99A22695A534000C2F23 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EF99A12695A534000C2F23 /* UIImageView+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		A0EF98212694FD37000C2F23 /* WebClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebClient.swift; sourceTree = "<group>"; };
 		A0EF98E826953655000C2F23 /* ImagesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesViewModel.swift; sourceTree = "<group>"; };
 		A0EF999B26959106000C2F23 /* PicSumImagesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicSumImagesService.swift; sourceTree = "<group>"; };
+		A0EF999E26959BA0000C2F23 /* ImageDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailViewController.swift; sourceTree = "<group>"; };
+		A0EF99A12695A534000C2F23 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				A0EF97862694C6EB000C2F23 /* AppDelegate.swift */,
+				A0EF99A02695A51E000C2F23 /* Common */,
 				A0EF97B72694EE1A000C2F23 /* HomeScreen */,
 				A0EF98202694FD03000C2F23 /* Networking */,
 				A0EF97B22694C77A000C2F23 /* Resources */,
@@ -153,6 +158,7 @@
 		A0EF97B72694EE1A000C2F23 /* HomeScreen */ = {
 			isa = PBXGroup;
 			children = (
+				A0EF999D26959B6D000C2F23 /* DetailView */,
 				A0EF98E726953646000C2F23 /* ViewModel */,
 				A0EF981D2694FA45000C2F23 /* Model */,
 				A0EF97BB2694F11A000C2F23 /* HomeTableViewController.swift */,
@@ -183,6 +189,22 @@
 				A0EF999B26959106000C2F23 /* PicSumImagesService.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A0EF999D26959B6D000C2F23 /* DetailView */ = {
+			isa = PBXGroup;
+			children = (
+				A0EF999E26959BA0000C2F23 /* ImageDetailViewController.swift */,
+			);
+			path = DetailView;
+			sourceTree = "<group>";
+		};
+		A0EF99A02695A51E000C2F23 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A0EF99A12695A534000C2F23 /* UIImageView+Extensions.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -317,9 +339,11 @@
 			files = (
 				A0EF97BC2694F11A000C2F23 /* HomeTableViewController.swift in Sources */,
 				A0EF981F2694FAC2000C2F23 /* Image.swift in Sources */,
+				A0EF999F26959BA0000C2F23 /* ImageDetailViewController.swift in Sources */,
 				A0EF97872694C6EB000C2F23 /* AppDelegate.swift in Sources */,
 				A0EF98E926953655000C2F23 /* ImagesViewModel.swift in Sources */,
 				A0EF999C26959106000C2F23 /* PicSumImagesService.swift in Sources */,
+				A0EF99A22695A534000C2F23 /* UIImageView+Extensions.swift in Sources */,
 				A0EF98222694FD37000C2F23 /* WebClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
