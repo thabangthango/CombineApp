@@ -24,6 +24,7 @@ class HomeTableViewController: UITableViewController {
     }
     
     private func loadImages() {
+        self.view.showLoading()
         viewModel.fetchAllImages()
     }
     
@@ -31,7 +32,10 @@ class HomeTableViewController: UITableViewController {
         viewModel.$images
             .dropFirst()
             .receive(on: DispatchQueue.main)
-            .sink { [weak self] response in self?.tableView.reloadData() }
+            .sink { [weak self] response in
+                self?.view.hideLoading()
+                self?.tableView.reloadData()
+            }
             .store(in: &disposables)
     }
 }

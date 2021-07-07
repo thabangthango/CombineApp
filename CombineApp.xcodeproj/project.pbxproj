@@ -20,6 +20,7 @@
 		A0EF999C26959106000C2F23 /* PicSumImagesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EF999B26959106000C2F23 /* PicSumImagesService.swift */; };
 		A0EF999F26959BA0000C2F23 /* ImageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EF999E26959BA0000C2F23 /* ImageDetailViewController.swift */; };
 		A0EF99A22695A534000C2F23 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EF99A12695A534000C2F23 /* UIImageView+Extensions.swift */; };
+		A0EF99A42695B92E000C2F23 /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EF99A32695B92E000C2F23 /* UIView+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		A0EF999B26959106000C2F23 /* PicSumImagesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicSumImagesService.swift; sourceTree = "<group>"; };
 		A0EF999E26959BA0000C2F23 /* ImageDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailViewController.swift; sourceTree = "<group>"; };
 		A0EF99A12695A534000C2F23 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
+		A0EF99A32695B92E000C2F23 /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				A0EF99A12695A534000C2F23 /* UIImageView+Extensions.swift */,
+				A0EF99A32695B92E000C2F23 /* UIView+Extensions.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -340,6 +343,7 @@
 				A0EF97BC2694F11A000C2F23 /* HomeTableViewController.swift in Sources */,
 				A0EF981F2694FAC2000C2F23 /* Image.swift in Sources */,
 				A0EF999F26959BA0000C2F23 /* ImageDetailViewController.swift in Sources */,
+				A0EF99A42695B92E000C2F23 /* UIView+Extensions.swift in Sources */,
 				A0EF97872694C6EB000C2F23 /* AppDelegate.swift in Sources */,
 				A0EF98E926953655000C2F23 /* ImagesViewModel.swift in Sources */,
 				A0EF999C26959106000C2F23 /* PicSumImagesService.swift in Sources */,

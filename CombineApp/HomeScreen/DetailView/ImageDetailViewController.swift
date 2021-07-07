@@ -9,14 +9,15 @@ class ImageDetailViewController: UIViewController {
         configureNavbar()
         loadImage()
     }
-    
+
     private func configureNavbar() {
         self.title = selectedImage?.author
     }
     
     private func loadImage() {
-        guard let imageUrl = selectedImage?.downloadUrl,
-              let url = URL(string: imageUrl)
+        guard
+            let imageUrl = selectedImage?.downloadUrl,
+            let url = URL(string: imageUrl)
         else { return }
         
         imageView.load(from: url)
